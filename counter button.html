@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar dom</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        :root{
+            --utama: #FFE66D;
+            --benar: #22C55E;
+            --salah: #EF4444;
+            --br-benar: #006B3C;
+            --br-salah: #8B0000;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--utama);
+        }
+
+        .card{
+            flex: 0 0 auto;
+            width: 16rem;
+            max-width: 15rem;
+            box-sizing: border-box;
+            height: 20rem;
+            padding: 0.5rem 1.5rem;
+            background: white;
+            border: 3px solid black;
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 7px 0 black;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card:hover{
+            transform: none;
+            box-shadow: 0 1px 3px black;
+        }
+
+        h1{
+            text-align: center;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .output{
+            width: 100%;
+            height: 2.5rem;
+            border: 3px solid black;
+            padding: 0.3rem;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .delete{
+            width: 1.1rem;
+            cursor: pointer;
+            position: absolute;
+            right: 2.5%;
+            top: 25%;
+            opacity: 0;
+            transition: all 0.1s ease-in;
+        }
+        .delete:hover{
+            transform: scale(1.04);
+        }
+        .delete:active{
+            transform: none;
+        }
+        .delete.show{
+            opacity: 1;
+        }
+
+        .contain-btn{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        button{
+            padding: 0.5rem 1rem;
+            color: white;
+            border: 2px solid;
+            outline: none;
+            transform: translate(-3px, -3px);
+            box-shadow: 3px 4px 0 black;
+            cursor: pointer;
+            transition: all 0.1s ease-in;
+        }
+        button:active{
+            transform: none;
+            box-shadow: none;
+        }
+
+        #tambah{
+            background: var(--benar);
+            border-color: var(--br-benar);
+        }
+        #kurang{
+            background: var(--salah);
+            border-color: var(--br-salah);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>counter</h1>
+
+        <div class="output">
+            <p>0</p>
+            <img src="remove.png" alt="delete" class="delete">
+        </div>
+
+        <div class="contain-btn">
+            <button id="tambah">Tambah</button>
+            <button id="kurang">Kurang</button>
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelector('.card');
+        const boxOutput = document.querySelector('.output > p');
+        const btnHapus = document.querySelector('.delete');
+        let nilaiDefault = 0;
+
+        function hiddenOpenBtn(nilai){
+            if(nilai > 0){
+                btnHapus.classList.add('show');
+            }else{
+                btnHapus.classList.remove('show');
+            }
+        }
+        card.addEventListener('click', function(event){
+            if(event.target.id.includes('tambah')){
+                nilaiDefault += 1;
+                hiddenOpenBtn(nilaiDefault);
+                boxOutput.textContent = nilaiDefault;
+            }else if(event.target.id.includes('kurang')){
+                nilaiDefault -= (nilaiDefault !== 0) ? 1 : 0;
+                hiddenOpenBtn(nilaiDefault);
+                boxOutput.textContent = nilaiDefault;
+            }else if(event.target.classList.contains('delete')){
+                nilaiDefault = 0;
+                boxOutput.textContent = nilaiDefault;
+                hiddenOpenBtn(nilaiDefault);
+            }
+        });
+    </script>
+</body>
+</html>
