@@ -1,0 +1,6 @@
+repositori ini saya ditujukan memeri jejak perkembangan saya. segala projek latihan akan berada di sini dan menjadi saksi bahwa saya belajar
+saya tidak tahu berapa lama ini, tapi saya yakin dengan setiap langkah pasti saya akan berhasil.
+note latihan javascript:
+  *kemarin membuat folder ini dan mengupload latihan dihari itu
+  *hari ini 5/mei/2026 saya melatih kemampuan javascript dan css. js untuk DOM, dan css untuk animasi. animasi css saya pertama kali.
+   latihan berikutnya  saya akan membuat animasi lagi, ya... sebagai latihan.
