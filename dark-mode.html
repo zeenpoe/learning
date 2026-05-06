@@ -67,6 +67,9 @@
 
         button.addEventListener('click', ()=>{
             document.documentElement.classList.toggle('dark');
+            if(documentElement.classList.contains('dark')){
+                button.textContent = 'light';
+            }
         });
     </script>
 </body>
