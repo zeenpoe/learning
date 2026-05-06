@@ -64,11 +64,14 @@
 
     <script>
         const button = document.querySelector('#tombol');
+        const tagHtml = document.documentElement.classList;
 
         button.addEventListener('click', ()=>{
             document.documentElement.classList.toggle('dark');
-            if(documentElement.classList.contains('dark')){
+            if(tagHtml.contains('dark')){
                 button.textContent = "light";
+            }else{
+                button.textContent = 'dark';
             }
         });
     </script>
