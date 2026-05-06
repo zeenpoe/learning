@@ -4,3 +4,6 @@ note latihan javascript:
   *kemarin membuat folder ini dan mengupload latihan dihari itu
   *hari ini 5/mei/2026 saya melatih kemampuan javascript dan css. js untuk DOM, dan css untuk animasi. animasi css saya pertama kali.
    latihan berikutnya  saya akan membuat animasi lagi, ya... sebagai latihan.
+  *hari ini 6/mei/2026 saya membuat fitur dark mode sebagai latihan DOM js, saya mendapat konsep baru, yaitu override css
+   override ini seperti mengganti nilai selektor dan mengganti yang baru, metode yang saya gunakan dengan menambahkan selektor
+   .dark ke elemen <html> tapi dengan syarat selektor ini berada di bawah pseudo-class :root
