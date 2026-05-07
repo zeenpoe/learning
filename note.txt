@@ -7,3 +7,5 @@ note latihan javascript:
   *hari ini 6/mei/2026 saya membuat fitur dark mode sebagai latihan DOM js, saya mendapat konsep baru, yaitu override css
    override ini seperti mengganti nilai selektor dan mengganti yang baru, metode yang saya gunakan dengan menambahkan selektor
    .dark ke elemen <html> tapi dengan syarat selektor ini berada di bawah pseudo-class :root
+  *hari ini 7/mei/2026 saya mengembangkan website to do list saya agar memberikan fitur edit, mungkin hari ini projeknya belum selesai
+   namun saya berusaha untuk menyelesaikan
