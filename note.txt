@@ -9,3 +9,4 @@ note latihan javascript:
    .dark ke elemen <html> tapi dengan syarat selektor ini berada di bawah pseudo-class :root
   *hari ini 7/mei/2026 saya mengembangkan website to do list saya agar memberikan fitur edit, mungkin hari ini projeknya belum selesai
    namun saya berusaha untuk menyelesaikan
+  *hari ini 8/mei/2026 saya membuat projek latihan baru, di projek itu kita bisa mengclik card maka card itu akan menghilang
