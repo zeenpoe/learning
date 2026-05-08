@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click to hide</title>
+    <style>
+        @font-face {
+            font-family: 'roboto';
+            src: url(Roboto-Regular.ttf);
+        }
+
+        :root{
+            --bg-color: rgb(0, 183, 255);
+        }
+        *{
+            font-family: 'roboto';
+            padding: 0;
+            margin: 0;
+        }
+        @keyframes fadein {
+            from{
+                transform: scaleX(0);
+            }to{
+                transform: scaleX(1);
+            }
+        }
+
+        body{
+            height: 100vh;
+            max-width: 100vw;
+            max-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        h1{
+            margin: 10px 0;
+        }
+
+        .container{
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            padding: 0 0.6rem;
+            box-sizing: border-box;
+        }
+
+        .card{
+            padding: 2rem;
+            background: var(--bg-color);
+            height: max-content;
+            cursor: pointer;
+            border: 2px solid black;
+            border-radius: 15px;
+            transition: all 0.2s ease;
+            animation-name: fadein;
+            animation-duration: 0.4s;
+            animation-timing-function: ease-in;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .card p{
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to hide</h1>
+    <div class="container">
+        
+    </div>
+
+    <script>
+        // mengambil elemen kontainer
+        const kontainer = document.querySelector('.container');
+
+        // mengulangi atau membuat banyak elemen
+        for(let i = 1; i <= 18; i++){
+            let card = document.createElement('div');
+            card.classList.add('card');
+            let p = document.createElement('p');
+            p.classList.add('isi');
+            p.textContent = `click here to hide #${i}`;
+
+            card.appendChild(p);
+            kontainer.append(card);
+        }
+
+        const card = document.querySelectorAll('.card');
+
+        card.forEach(function(elemen){
+            elemen.addEventListener('click', (event)=>{
+                if(event.target.classList.contains('card') || event.target.classList.contains('isi')){
+                    elemen.remove();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
