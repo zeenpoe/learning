@@ -10,3 +10,6 @@ note latihan javascript:
   *hari ini 7/mei/2026 saya mengembangkan website to do list saya agar memberikan fitur edit, mungkin hari ini projeknya belum selesai
    namun saya berusaha untuk menyelesaikan
   *hari ini 8/mei/2026 saya membuat projek latihan baru, di projek itu kita bisa mengclik card maka card itu akan menghilang
+  *hari ini 10/mei/2026 saya mengerjakan projek mini quiz app sederhana menggunakan html css dan javascript, di dini saya belajar untuk
+   mengelola folder agar rapi da mudah di baca, kemarin tidak sempat membuat catatan karena saya fokus membuat itu, ini panjang sekali
+   untuk meraih fullstack web dev saya harus belajar banyak ini baru beberapa minggu.
