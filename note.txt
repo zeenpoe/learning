@@ -14,4 +14,7 @@ note latihan javascript:
    mengelola folder agar rapi da mudah di baca, kemarin tidak sempat membuat catatan karena saya fokus membuat itu, ini panjang sekali
    untuk meraih fullstack web dev saya harus belajar banyak ini baru beberapa minggu. kali ini saya juga belajar tag video untuk pengetahu
    an, mungkin akan membantu saya kedepannya.
-  
+  *hari ini 11/mei/2026 saya membelajari beberapa methode array, mempelajari state dan mempraktekannya, serta saya belajar dynamic rendering
+   . mungkin sedikit namun saya coba menggunakan metode belajar fokus dan ke tiga materi itu hari ini, meskipun cuman beberapa jam itu
+   pasti mungkin dapat mengubah masa depan, setiap detik saya persiapkan dengan baik agar setelah lulus saya coba membuat usaha di bidang
+   ini. semoga itu terwujud dengan setiap detik waktu ku luangkan untuk ini.
