@@ -18,3 +18,5 @@ note latihan javascript:
    . mungkin sedikit namun saya coba menggunakan metode belajar fokus dan ke tiga materi itu hari ini, meskipun cuman beberapa jam itu
    pasti mungkin dapat mengubah masa depan, setiap detik saya persiapkan dengan baik agar setelah lulus saya coba membuat usaha di bidang
    ini. semoga itu terwujud dengan setiap detik waktu ku luangkan untuk ini.
+ *hari ini 12/mei/2026 saya mempelajari state ui, dan dynamic ui, sekalian mencoba mempelajari fetch API. karena kemarin cuman memfokuskan
+  ke methid array.
