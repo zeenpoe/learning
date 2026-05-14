@@ -23,3 +23,6 @@ note latihan javascript:
   *hari ini 13/mei/2026, kemarin saya belajar state dan membuat program memasukkan username lalu langsung menampilkannya, itu sebagai bentuk
    latihan dari pemahaman state. kemarin saya belum belajar fetch api oh iya kemarin pun saya juga mengintegrasikan local storage ke 
    program yang saya buat. hari ini dengan sisa waktu ini saya mencoba belajar fetch API.
+  *hari ini 14/mei/2026, saya melanjutkan belajar fetch api karena kemarin saya berheti belajar karena saya tidak paham dengan fetch api itu
+   sendiri. dan kali ini saya mencoba melanjutkan web app quiz untuk bisa melihat skor ketika selesai menjawab quiz itu, niatnya saya 
+   ingin membuat quiz itu memiliki fitur fetch api.
